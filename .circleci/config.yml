@@ -17,6 +17,9 @@ jobs:
       - run:
           name: Run Environmental Variable from context
           command: echo $MY_NAME
+      - run:
+          name: RUN THE OTHER VARIABLE OTHER NAME
+          command: echo $OTHER_NAME
 workflows:
   Display-Context:
     jobs:
