@@ -9,7 +9,8 @@ jobs:
           name: Simple Copy and cat
           command: |
             ls -al
-            echo "now copying files for $NAME"
+            echo "now copying files for"
+            echo $NAME
             mv work.txt play.txt
             ls -al
             cat play.txt
