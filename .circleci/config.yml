@@ -7,7 +7,4 @@ jobs:
           name: Simple Copy and cat
           command: |
             ls -al
-            echo "now copying files"
-            mv work.txt play.txt
-            cat play.txt
-            echo '^^^all done now^^^'
+            
