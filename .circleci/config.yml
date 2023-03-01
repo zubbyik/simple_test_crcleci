@@ -3,6 +3,7 @@ jobs:
     docker:
       - image: cimg/base:2023.02
     steps:
+      - checkout
       - run:
           name: Simple Copy and cat
           command: |
