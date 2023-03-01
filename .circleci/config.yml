@@ -1,5 +1,5 @@
 jobs:
-  build:
+  Simple-App:
     docker:
       - image: cimg/base:2023.02
     steps:
@@ -8,8 +8,14 @@ jobs:
           name: Simple Copy and cat
           command: |
             ls -al
-            echo "now copying files"
+            echo "now copying files for $NAME"
             mv work.txt play.txt
             ls -al
             cat play.txt
             echo '^^^all done now^^^'
+workflows:
+  Display-Context:
+    jobs:
+      - Simple-App:
+          context: 
+            - zubbs-imad
