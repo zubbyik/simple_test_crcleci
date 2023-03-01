@@ -10,5 +10,6 @@ jobs:
             ls -al
             echo "now copying files"
             mv work.txt play.txt
+            ls -al
             cat play.txt
             echo '^^^all done now^^^'
