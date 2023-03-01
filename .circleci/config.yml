@@ -10,11 +10,13 @@ jobs:
           command: |
             ls -al
             echo "now copying files for"
-            echo $NAME
             mv work.txt play.txt
             ls -al
             cat play.txt
             echo '^^^all done now^^^'
+      - run:
+          name: Run Environmental Variable from context
+          command: echo $MY_NAME
 workflows:
   Display-Context:
     jobs:
